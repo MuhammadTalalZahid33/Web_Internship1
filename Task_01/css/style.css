@@ -4,49 +4,32 @@
     box-sizing: border-box;
 }
 
-.logo {
-    width: 40px;
-    height: 40px;
-    animation: flicker 2s infinite;
-
+.navleft{
+    display: flex;
+    align-items: center;
 }
 
-@keyframes flicker {
-    0%, 90% {
-        filter: brightness(70%);
-        
-    }
-    25% {
-        filter: brightness(90%);
-        
-    }
-    40% {
-        filter: brightness(110%);
-        
-    }
-    55% {
-        filter: brightness(130%);
-        
-    }
-    70% {
-        filter: brightness(150%);
-        
-    }
-    90% {
-        filter: brightness(180%);
-        
-    }
+.navleft a{
+    color: rgb(57, 54, 54);
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+.navleft h2:hover{
+    color: #5d656e;
 }
 
 body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #b4c1d0;
 }
 
 header {
-    background-color: #333;
+    background: #8864a1;
+    background: linear-gradient(90deg, rgb(172, 134, 197) 0%, rgb(232, 102, 102) 50%, rgba(252, 176, 69, 1) 100%);
     width: 100vw;
     padding: 15px 20px;
     position: fixed;
@@ -83,7 +66,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #555;
+    background-color: #5b5a5a;
 }
 
 .hero {
@@ -95,12 +78,21 @@ nav ul li a:hover {
 
 .hero p{
     margin: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+
+.hero img{
+    transition: 0.5s ease;
+}
+
+.hero img:hover{
+    transform: scale(1.1);
 }
 
 .content {
     padding: 50px 20px;
-    background-color: #ccc0c0;
+    background-color: #c2c2c2;
     margin: 100px auto;
     width: 80%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -172,7 +164,43 @@ footer {
     bottom: 0;
 }
 
-@media (max-width: 768px) {
+
+.logo {
+    width: 40px;
+    height: 40px;
+    animation: flicker 2s infinite;
+
+}
+
+@keyframes flicker {
+    0%, 90% {
+        filter: brightness(70%);
+        
+    }
+    25% {
+        filter: brightness(90%);
+        
+    }
+    40% {
+        filter: brightness(110%);
+        
+    }
+    55% {
+        filter: brightness(130%);
+        
+    }
+    70% {
+        filter: brightness(150%);
+        
+    }
+    90% {
+        filter: brightness(180%);
+        
+    }
+}
+
+
+@media (max-width: 668px) {
     nav ul {
         flex-direction: column;
         gap: 10px;
