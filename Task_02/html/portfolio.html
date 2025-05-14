@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" href="/Files/dworker.png" type="image/x-icon" id ="favilogo">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <header>
+            <nav class="navbar" aria-label="Main navigation">
+              <!-- Logo & Site Name -->
+              <div class="navbar-left">
+                <a href="#home" class="logo-link">
+                  <img src="/Files/hardworking.png" 
+                  alt="Site Logo" class="logo" />
+                  <span class="site-name">MyPortfolio</span>
+                </a>
+              </div>
+        
+              <!-- Navigation Links -->
+              <ul class="navbar-center">
+              
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+
+              </ul>
+        
+              <!-- Contact Us Button -->
+              <div class="navbar-right">
+                <a href="#contact" class="contact-btn">Contact Me</a>
+              </div>
+        
+        
+              <div class="menu-toggle" onclick="toggleMenu()">
+                &#9776;
+              </div>
+            </nav>
+          </header>
+    </header>
+
+    <main>
+
+    <!-- MAIN SECTION -->
+    <section id="home">
+        <div class="home-left">
+        <p id="hello">Hello There!</p>
+        <div class="intro">
+            <span>I'm <a href="#about">Talal Zahid</a>,</span>
+            <span>Web Developer</span>
+            <span>Based in Pakistan.</span>
+        </div>
+        <p id="intro2">I am a passionate web developer skilled in HTML, CSS, and JavaScript on the road to become master of development. I create responsive and interactive web applications.</p>
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/muhammadtalalzahid"><img class="linkedin" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" alt="LinkedIn"></a>
+            <a href="https://github.com/MuhammadTalalZahid33"><img class="github" src="https://img.icons8.com/m_outlined/512/github.png" alt="GitHub"></a>
+            <a href="#"><img class="twitter" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/1200px-Logo_of_Twitter.svg.png" alt="Twitter"></a>
+            <div class="hire">
+                <a href="#contact">Hire Me</a>
+              </div>
+        </div>
+
+        </div>
+
+        
+
+        <div class="home-right">
+            <img src="/Files/avatar.png" alt="mypic"> 
+        </div>
+       
+    </section>
+
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <ul>
+              <li>C/C++</li>
+              <li>C#</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Frameworks</h3>
+            <ul>
+              <li>.NET MVC</li>
+              <li>Blazor</li>
+              <li>Entity Framework</li>
+              <li>Identity Framework</li>
+            </ul>
+          </div>
+      
+          <div class="skill-category">
+            <h3>Databases</h3>
+            <ul>
+              <li>MS SQL Server</li>
+              <li>Oracle</li>
+            </ul>
+          </div>
+      
+          <div class="skill-category">
+            <h3>Tools & Version Control</h3>
+            <ul>
+              <li>Visual Studio</li>
+              <li>VS Code</li>
+              <li>GitHub</li>
+            </ul>
+          </div>
+      
+          <div class="skill-category">
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Problem Solving</li>
+              <li>Communication</li>
+              <li>Presentation</li>
+              <li>Teamwork</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+
+
+    <!-- SERVICES SECTION -->
+    <section id="services">
+        <div class="services-header">
+            <div><h2>-Services</h2></div>
+            <h3><span class="highlight">Services</span> I Provide</h3>
+        
+        </div>
+    
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBoQP9BwB1uwWwkeC7B31nERl21Rnl2XGKPA&s" alt="UI/UX Design">
+                </div>
+                <h4>UI/UX Design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ...</p>
+                <a href="#" class="learn-more">Learn more &rarr;</a>
+            </div>
+    
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="data:image/jpeg;base64,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" alt="Application Design">
+                </div>
+                <h4>Application Design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ...</p>
+                <a href="#" class="learn-more">Learn more &rarr;</a>
+            </div>
+    
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh52Sm4Ri_2VCkwd5wSz3Pubra9P2UGCPaWQ&s" alt="Website Design">
+                </div>
+                <h4>Website Design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ...</p>
+                <a href="#" class="learn-more">Learn more &rarr;</a>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <!-- ABOUT SECTION  -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="/Files/about.png" alt="Talal Zahid">
+            </div>
+    
+            <div class="about-content">
+                <h2>About Me</h2>
+                <h3>Who is <span class="highlight">Muhammad Talal Zahid?</span></h3>
+                <p>I am a web developer specializing in creating interactive, user-friendly, and visually appealing websites. My focus is on crafting digital experiences that resonate with users and align with business objectives.</p>
+    
+                <div class="metrics">
+                    <div class="metric">
+                        <h4>50+</h4>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="metric">
+                        <h4>10+</h4>
+                        <p>Industries Covered</p>
+                    </div>
+                    <div class="metric">
+                        <h4>1+</h4>
+                        <p>Years of Experience</p>
+                    </div>
+                </div>
+    
+                <a href="/Files/Muhammad_Talal_Zahid_Resume.pdf" class="cv-button">Download CV <span>&rarr;</span></a>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- PROJECT SECTION  -->
+    <section id="projects" class="projects-section">
+        <div class="projects-header">
+          <h2>Projects</h2>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Chat with Business Process Model</h3>
+            <p>A web app developed using React.js for frontend, Django for backend, and PostgreSQL for database interactions. Allows users to upload and query about their BPMNs.</p>
+            <a href="https://chatwithbpm.netlify.app/" class="learn-more">Learn More ➔</a>
+          </div>
+      
+          <div class="project-card">
+            <h3>W3Schools Clone</h3>
+            <p>A functional web application inspired by the W3Schools website, built using ADO.NET, MVC Framework, and MS SQL Server. Integrated with ASP.NET Identity for secure access.</p>
+            <a href="#" class="learn-more">Learn More ➔</a>
+          </div>
+      
+          <div class="project-card">
+            <h3>Linguista - Web Learning Platform</h3>
+            <p>A user-friendly website for learning web development fundamentals using ASP.NET and Blazor with razor pages.</p>
+            <a href="#" class="learn-more">Learn More ➔</a>
+          </div>
+      
+          <div class="project-card">
+            <h3>ELO Shopping App</h3>
+            <p>A basic shopping app built with Kotlin and SQLite, featuring add-to-cart functionality. Admin can add products for customers to view and purchase.</p>
+            <a href="#" class="learn-more">Learn More ➔</a>
+          </div>
+      
+          <div class="project-card">
+            <h3>Chase Monster</h3>
+            <p>A basic 2D game developed in Unity Engine with player animation and back-and-forth movement, coded in C#.</p>
+            <a href="#" class="learn-more">Learn More ➔</a>
+          </div>
+      
+          <div class="project-card">
+            <h3>Automated Score Extraction</h3>
+            <p>A Python-based tool using OCR to extract handwritten scores, compute totals, and overlay recognized values on images.</p>
+            <a href="#" class="learn-more">Learn More ➔</a>
+          </div>
+        </div>
+      </section>
+
+   
+    <!-- CONTACT-ME SECTION -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>I'd love to hear from you! Feel free to reach out via the form below:</p>
+      
+        <div class="contact-container">
+          <!-- Contact Form -->
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            </div>
+      
+            <a class="submit-btn" href="mailto:talalzahid912@gmail.com">Send Email</a> 
+          </form>
+      
+          <!-- Contact Image -->
+          <div class="contact-image">
+            <img src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?ga=GA1.1.889577573.1747254544&semt=ais_hybrid&w=740" alt="Contact Me Illustration">
+          </div>
+        </div>
+      </section>
+      
+      
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Muhammad Talal Zahid</p>
+    </footer>
+</body>
+</html>
